@@ -18,9 +18,9 @@ public class ArrayWarehouseBuilder extends BaseWarehouseBuilder{
     private static final Logger LOG = LogManager.getLogger();
     
     public ArrayWarehouseBuilder(){
-        super();
-        warehouse = Warehouse.getInstance();
+        super(Warehouse.getInstance());
     }
+    
     @Override
     public Warehouse buildWarehouse(List<EntityArray> arrays) {
         

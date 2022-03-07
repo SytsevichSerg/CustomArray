@@ -21,7 +21,7 @@ public class FileSystemRepositoryBuilder extends BaseRepositoryBuilder{
     
     private static final Logger LOG = LogManager.getLogger();
     public FileSystemRepositoryBuilder(){
-        repository = ArraysRepository.getInstance();
+        super (ArraysRepository.getInstance());
     }
     
     @Override

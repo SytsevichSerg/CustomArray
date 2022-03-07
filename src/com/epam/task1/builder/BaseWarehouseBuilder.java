@@ -8,5 +8,8 @@ import java.util.List;
 
 public abstract class BaseWarehouseBuilder {
     protected Warehouse warehouse;
+    protected BaseWarehouseBuilder (Warehouse warehouse){
+        this.warehouse = warehouse;
+    }
     public abstract Warehouse buildWarehouse(List<EntityArray> arrays);
 }
